@@ -3,6 +3,7 @@ import { Container, Grid } from "@mui/material";
 import headerStyle from "@/styles/header.module.scss";
 import Link from "next/link";
 
+import MenuIcon from "@mui/icons-material/Menu";
 import { useIsomorphicLayoutEffect } from "@/hook";
 
 const Header = () => {
@@ -37,20 +38,55 @@ const Header = () => {
     }
   });
 
+  function openMobileNav() {
+    let nav = document.querySelector(".nav");
+    document.querySelector(".header").classList.add(headerStyle.active);
+    nav.classList.add(headerStyle.active);
+  }
+
+  useIsomorphicLayoutEffect(() => {
+    if (window.innerWidth < 920) {
+      let header = document.querySelector(".header");
+
+      header.addEventListener("click", (event) => {
+        if (event.target.closest(".link-btn")) {
+          closeMobileNav();
+        } else if (event.target.closest(".nav-btn")) {
+          let nav = document.querySelector(".nav");
+          document.querySelector(".header").classList.add(headerStyle.active);
+          nav.classList.add(headerStyle.active);
+        } else closeMobileNav();
+      });
+
+      function closeMobileNav() {
+        let nav = document.querySelector(".nav");
+        document.querySelector(".header").classList.remove(headerStyle.active);
+        nav.classList.remove(headerStyle.active);
+      }
+    }
+  });
+
   return (
     <header className={`${headerStyle.header} header`}>
       <Container maxWidth="xl">
         <Grid container alignItems="center">
-          <Grid item md={3}>
+          <Grid item md={3} sm={12} xs={12}>
             <div className={headerStyle.logo}>
               <Link className="link-btn" href={"/"}>
                 <img src="/demologo.png" alt="" />
               </Link>
+
+              <div
+                className={`${headerStyle.mobile_nav}`}
+                onClick={openMobileNav}
+              >
+                <MenuIcon />
+              </div>
             </div>
           </Grid>
 
           <Grid item md={9}>
-            <ul className={headerStyle.nav}>
+            <ul className={`${headerStyle.nav} nav`}>
               <li>
                 <Link className="link-btn" href={"/"}>
                   Home

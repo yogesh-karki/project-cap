@@ -49,7 +49,7 @@ const CampaignVideos = () => {
         <Grid container spacing={4} style={{ marginTop: "32px" }}>
           {campaignVideos.map((val, index) => {
             return (
-              <Grid item md={4} key={index}>
+              <Grid item md={4} sm={6} xs={6} key={index}>
                 <div className={homeStyle.video_clip}>
                   <a href={val.href} target="_blank">
                     <div className={homeStyle.clip_wrap}>

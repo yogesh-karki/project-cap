@@ -139,6 +139,10 @@ export default function Home() {
       ScrollTrigger.refresh();
     });
 
+    if (window.innerWidth < 900) {
+      gsapCtx.revert();
+    }
+
     return () => gsapCtx.revert();
   });
   return (
@@ -316,7 +320,7 @@ export default function Home() {
               >
                 {partnersData.map((val, index) => {
                   return (
-                    <Grid item md={4} key={index}>
+                    <Grid item md={4} sm={6} xs={6} key={index}>
                       <div className={homeStyle.partners_logo}>
                         <img src={val.logo} alt="" />
                       </div>
@@ -338,7 +342,7 @@ export default function Home() {
               >
                 {collabPartner.map((val, index) => {
                   return (
-                    <Grid item md={4} key={index}>
+                    <Grid item md={4} sm={6} xs={6} key={index}>
                       <div className={homeStyle.partners_logo}>
                         <img src={val.logo} alt="" />
                       </div>

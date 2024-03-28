@@ -47,7 +47,14 @@ const ImpactsNumber = () => {
           <Grid container>
             {impactData.map((val, index) => {
               return (
-                <Grid item md={2} className={homeStyle.impact} key={index}>
+                <Grid
+                  item
+                  md={2}
+                  sm={6}
+                  xs={6}
+                  className={homeStyle.impact}
+                  key={index}
+                >
                   <div className={homeStyle.count}>
                     {isVisible ? <CountUp end={val.count} /> : "000"}{" "}
                     <small>{val.unit}</small>

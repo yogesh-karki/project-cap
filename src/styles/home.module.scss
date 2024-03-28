@@ -696,12 +696,36 @@
     padding-top: 120px;
   }
 
+  .campaign_videos {
+    .video_clip {
+      video {
+        height: 210px;
+      }
+    }
+  }
+
   .focusBox {
     .focusCard {
       border-radius: 0 !important;
 
       h4 {
         height: auto !important;
+      }
+    }
+  }
+
+  .impacts {
+    h2 {
+      margin-bottom: 12px;
+    }
+  }
+
+  .outputs {
+    .box {
+      margin: 0;
+
+      .output_content {
+        padding: 15px;
       }
     }
   }

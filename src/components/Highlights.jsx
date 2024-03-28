@@ -45,11 +45,24 @@ const Highlight = () => {
 
   return (
     <Swiper
-      slidesPerView={"4"}
-      spaceBetween={16}
+      spaceBetween={10}
       navigation={true}
       modules={[Navigation]}
       className="highlightSlider"
+      breakpoints={{
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 50,
+        },
+      }}
     >
       {highlight_cards.map((val, index) => {
         return (
