@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import { Container, Grid } from "@mui/material";
 import { useRouter } from "next/router";
-import team from "../data";
+import team from "../data.json";
 import componentStyle from "../../../styles/component.module.scss";
 
 import Link from "next/link";

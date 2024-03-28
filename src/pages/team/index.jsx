@@ -6,7 +6,7 @@ import InnerBanner from "../../components/Banner/InnerBanner";
 import { Container, Grid } from "@mui/material";
 
 import componentStyle from "../../styles/component.module.scss";
-import data from "./data";
+import data from "./data.json";
 
 import { ButtonUnderLine } from "@/components/ActonButton";
 
