@@ -17,8 +17,6 @@ const TeamDetails = (params) => {
     (member) => member.name.toLowerCase().replace(/\s+/g, "-") === name
   );
 
-  console.log(selectedMember);
-
   return (
     <>
       <Head>
@@ -29,39 +27,45 @@ const TeamDetails = (params) => {
       </Head>
       <div style={{ marginTop: "90px" }}>
         <Container maxWidth="lg" className={componentStyle.team_page}>
-          <div className={componentStyle.no_banner_breadcrumb}>
-            <ul>
-              <li>
-                <Link href="/">Home</Link>
-                <span>
-                  <KeyboardArrowRight />
-                </span>
-              </li>
-              <li>
-                <Link href="/team">Team</Link>
-                <span>
-                  <KeyboardArrowRight />
-                </span>
-              </li>
-              <li>
-                <a href="#">{selectedMember.name}</a>
-              </li>
-            </ul>
-          </div>
-
-          <Grid container spacing={5}>
-            <Grid item md="4">
-              <img src={selectedMember.image} alt="" />
-            </Grid>
-
-            <Grid item md="8">
-              <div className={componentStyle.team_page_detail}>
-                <h3>{selectedMember.name}</h3>
-                <h6>{selectedMember.position}</h6>
-                <p>{selectedMember.text}</p>
+          {selectedMember ? (
+            <>
+              <div className={componentStyle.no_banner_breadcrumb}>
+                <ul>
+                  <li>
+                    <Link href="/">Home</Link>
+                    <span>
+                      <KeyboardArrowRight />
+                    </span>
+                  </li>
+                  <li>
+                    <Link href="/team">Team</Link>
+                    <span>
+                      <KeyboardArrowRight />
+                    </span>
+                  </li>
+                  <li>
+                    <a href="#">{selectedMember.name}</a>
+                  </li>
+                </ul>
               </div>
-            </Grid>
-          </Grid>
+
+              <Grid container spacing={5}>
+                <Grid item md={4}>
+                  <img src={selectedMember.image} alt="" />
+                </Grid>
+
+                <Grid item md={8}>
+                  <div className={componentStyle.team_page_detail}>
+                    <h3>{selectedMember.name}</h3>
+                    <h6>{selectedMember.position}</h6>
+                    <p>{selectedMember.text}</p>
+                  </div>
+                </Grid>
+              </Grid>
+            </>
+          ) : (
+            ""
+          )}
         </Container>
       </div>
     </>

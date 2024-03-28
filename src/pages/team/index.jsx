@@ -11,7 +11,6 @@ import data from "./data.json";
 import { ButtonUnderLine } from "@/components/ActonButton";
 
 const index = () => {
-  console.log(data);
   return (
     <>
       <Head>
