@@ -1,0 +1,111 @@
+[
+  {
+    "id": 1,
+    "municipality": "Bharatpur",
+    "latitude": 27.6606322,
+    "longitude": 84.4001725,
+    "latLng": [84.6061894, 27.5730996],
+    "zoomValue": 9.8,
+    "title": "Bharatpur Metropolitan City",
+    "stats": {
+      "area": "433 Sq Km",
+      "population": "369377",
+      "plastics_generated": 562.1,
+      "plastics_collected": 140,
+      "efficiency": 25,
+      "major_issue": "Landfill site in Narayani River Bank",
+      "river_leakage": "(High) Mainly in Monsoon season"
+    }
+  },
+  {
+    "id": 2,
+    "municipality": "Ichchhakamana ",
+    "latitude": 27.830114,
+    "longitude": 84.566537,
+    "latLng": [84.8061894, 27.680114],
+    "zoomValue": 9.8,
+    "title": "Ichchhakamana Rural Municipality",
+    "stats": {
+      "area": "166.67 Sq Km",
+      "population": "25,012",
+      "plastics_generated": 38,
+      "plastics_collected": 3.2,
+      "efficiency": 8.3,
+      "major_issue": "Open dumping of plastic waste along Trishuli river, No waste collection mechanism",
+      "river_leakage": "(High) Gandaki River Basin"
+    }
+  },
+  {
+    "id": 3,
+    "municipality": "Bardibas",
+    "latitude": 27.042614,
+    "longitude": 85.872479,
+    "latLng": [86.122479, 26.942614],
+
+    "zoomValue": 9.5,
+    "title": "Bardibas Municipality",
+    "stats": {
+      "area": "316 Sq Km",
+      "population": "73,868",
+      "plastics_generated": 112.4,
+      "plastics_collected": 26.97,
+      "efficiency": 24,
+      "major_issue": "No waste collection mechanism",
+      "river_leakage": "(Medium) Kamala River Basin"
+    }
+  },
+  {
+    "id": 4,
+    "municipality": "Kathmandu",
+    "latitude": 27.7389994,
+    "longitude": 85.3645838,
+    "latLng": [85.6045838, 27.609994],
+    "zoomValue": 10,
+    "title": "Kathmandu Valley",
+    "stats": {
+      "area": "600 Sq Km",
+      "population": "2.5 million",
+      "plastics_generated": 5670,
+      "plastics_collected": 4665.6,
+      "efficiency": 81,
+      "major_issue": "High consumption of Plastics, Improper disposal of plastic wastes",
+      "river_leakage": "(Medium) Bagmati River Basin"
+    }
+  },
+  {
+    "id": 5,
+    "municipality": "Hetauda",
+    "latitude": 27.432976,
+    "longitude": 85.008075,
+    "latLng": [85.308075, 27.302976],
+    "zoomValue": 9.5,
+    "title": "Hetauda Sub Metropolitan City",
+    "stats": {
+      "area": "261.6 Sq Km",
+      "population": "195,951",
+      "plastics_generated": 540,
+      "plastics_collected": 220.86,
+      "efficiency": 40.9,
+      "major_issue": "Open dumping of plastic wastes along Rapti river banks",
+      "river_leakage": "(High) Gandaki River Basin"
+    }
+  },
+  {
+    "id": 6,
+    "municipality": "Golanjor",
+    "latitude": 27.259984,
+    "longitude": 86.0592264,
+    "latLng": [86.152264, 27.259984],
+    "zoomValue": 9.5,
+    "title": "Golanjor Rural Municipality",
+    "stats": {
+      "area": "184.13 Sq Km",
+      "population": "19,329",
+      "plastics_generated": 136.8,
+      "plastics_collected": 2.44,
+      "efficiency": 8.3,
+      "major_issue": "No waste collection mechanism",
+      "river_leakage": "(Medium) Koshi River Basin"
+    }
+  }
+]
