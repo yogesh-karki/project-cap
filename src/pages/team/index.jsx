@@ -19,7 +19,7 @@ const index = () => {
         <meta property="og:image:width" content="640" />
         <meta property="og:image:height" content="442" />
       </Head>
-      <InnerBanner title="Team" image="/team.jpg" />
+      <InnerBanner title="Team" parent="About" image="/team.jpg" />
 
       <section className={componentStyle.textbox}>
         <Container maxWidth="lg">

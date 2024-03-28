@@ -18,6 +18,7 @@ const about = () => {
 
       <InnerBanner
         title="Project Description"
+        parent="About"
         image="/quiet-issue-underwater-plastics-float-blue-sea.jpg"
       />
 

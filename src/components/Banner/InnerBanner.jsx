@@ -4,7 +4,7 @@ import { Container } from "@mui/material";
 import Link from "next/link";
 import { KeyboardArrowRight } from "@mui/icons-material";
 
-const InnerBanner = ({ title, text, image }) => {
+const InnerBanner = ({ title, parent, image }) => {
   return (
     <section
       className={componentStyle.banner_page}
@@ -22,12 +22,16 @@ const InnerBanner = ({ title, text, image }) => {
               </span>
             </li>
 
-            <li>
-              <Link href="/about">About</Link>
-              <span>
-                <KeyboardArrowRight />
-              </span>
-            </li>
+            {parent ? (
+              <li>
+                <Link href="#">{parent}</Link>
+                <span>
+                  <KeyboardArrowRight />
+                </span>
+              </li>
+            ) : (
+              ""
+            )}
           </ul>
           <h2>{title}</h2>
         </div>

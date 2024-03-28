@@ -37,7 +37,7 @@ const strategy = () => {
         <meta property="og:image:width" content="640" />
         <meta property="og:image:height" content="442" />
       </Head>
-      <InnerBanner title="Strategy" image="/224.jpg" />
+      <InnerBanner parent="About" title="Strategy" image="/224.jpg" />
 
       <section className={componentStyle.textbox}>
         <Container maxWidth="md">

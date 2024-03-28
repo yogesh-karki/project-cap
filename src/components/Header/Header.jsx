@@ -121,7 +121,7 @@ const Header = () => {
                 </div>
               </li>
               <li>
-                <Link className="link-btn" href="/about">
+                <Link className="link-btn" href="/activities">
                   Activities{" "}
                 </Link>
               </li>

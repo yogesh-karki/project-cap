@@ -36,6 +36,7 @@ const strategy = () => {
       </Head>
       <InnerBanner
         title="Methodology and Innovation "
+        parent="About"
         image="/plastic-waste-pollution-ocean-plastic-bottle-floating-ocean-generative-ai.jpg"
       />
 

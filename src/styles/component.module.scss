@@ -218,7 +218,7 @@
   .map_title {
     position: absolute;
     left: 5%;
-    bottom: 15px;
+    bottom: 150px;
     width: 370px;
 
     h5 {
@@ -510,6 +510,14 @@
           height: 14px;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .map_section {
+    .map_title {
+      bottom: 15px;
     }
   }
 }
