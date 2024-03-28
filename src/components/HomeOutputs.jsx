@@ -84,7 +84,7 @@ const HomeOutputs = () => {
 
                         <svg
                           viewBox="0 0 100 50"
-                          enable-background="new 0 0 100 50"
+                          enableBackground="new 0 0 100 50"
                         >
                           <defs>
                             <linearGradient
@@ -94,11 +94,11 @@ const HomeOutputs = () => {
                               x2="0"
                               y2="0"
                             >
-                              <stop id="stop1" offset="0" stop-color="blue" />
+                              <stop id="stop1" offset="0" stopColor="blue" />
                               <stop
                                 id="stop2"
                                 offset="0"
-                                stop-color="lightblue"
+                                stopColor="lightblue"
                               />
                             </linearGradient>
                           </defs>
