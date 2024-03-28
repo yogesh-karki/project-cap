@@ -269,7 +269,7 @@ export default function Home() {
             </Grid>
           </Grid>
 
-          <ImpactNumbers />
+          {/* <ImpactNumbers /> */}
         </Container>
       </section>
 
