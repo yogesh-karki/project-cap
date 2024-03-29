@@ -514,6 +514,78 @@
   }
 }
 
+.municipality_responsive {
+  display: none;
+  padding: 40px 0;
+
+  .card {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #beb7b7;
+
+    &_title {
+      position: relative;
+      h5 {
+        font-size: 22px;
+        line-height: 28px;
+        padding-right: 50px;
+      }
+
+      p {
+        margin-bottom: 5px;
+      }
+
+      .icon {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+.impact_box {
+  background: #fff;
+  margin-top: 10px;
+  padding: 10px;
+
+  &.active {
+    display: block;
+  }
+
+  .data_title {
+    position: relative;
+    p {
+      small {
+        opacity: 0.6;
+        display: block;
+      }
+    }
+  }
+
+  .chart_data_item {
+    margin: 20px 0;
+
+    span {
+      opacity: 0.6;
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+
+  .chart_issue {
+    .chart_issue_card {
+      margin: 15px 0;
+    }
+
+    h6 {
+      opacity: 0.8;
+      margin-bottom: 5px;
+    }
+  }
+}
+
 @media screen and (max-width: 1700px) {
   .map_section {
     .map_title {
@@ -531,12 +603,50 @@
   }
 }
 
+@media screen and (max-width: 900px) {
+  .map_section {
+    .map_title {
+      left: 2%;
+      width: 280px;
+    }
+
+    .map_data_box {
+      right: 0;
+      width: 340px;
+
+      &.active {
+        width: 70vw;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 500px) {
   .team_page_detail {
     padding-left: 10px;
   }
 
-  .map_data_box {
-    display: none;
+  .map_section {
+    height: auto;
+    .map_container {
+      display: none;
+    }
+
+    .map_title {
+      left: auto;
+      width: 100%;
+      position: relative;
+      bottom: auto;
+      background: #003f63;
+      padding: 40px;
+    }
+
+    .map_data_box {
+      display: none;
+    }
+  }
+
+  .municipality_responsive {
+    display: block;
   }
 }

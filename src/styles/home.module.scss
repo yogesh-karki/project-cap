@@ -214,6 +214,14 @@
   }
 }
 
+.impact_numbers {
+  margin-top: 80px;
+}
+.map_box {
+  padding: 0px 0 80px;
+  background: #003e62;
+}
+
 .numanim {
   text-align: center;
   padding: 120px 0;
@@ -691,6 +699,10 @@
 }
 
 @media screen and (max-width: 550px) {
+  .map_box {
+    padding-bottom: 0;
+  }
+
   .home_news {
     margin-top: 0;
     padding-top: 120px;
@@ -729,12 +741,4 @@
       }
     }
   }
-}
-
-.impact_numbers {
-  margin-top: 80px;
-}
-.map_box {
-  padding: 0px 0 80px;
-  background: #003e62;
 }

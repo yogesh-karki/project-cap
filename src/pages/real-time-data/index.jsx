@@ -1,6 +1,7 @@
 import React from "react";
 import MapComponent from "../../components/MapData/MapComponent";
 import Head from "next/head";
+import MunicipalityList from "../../components/MapData/MunicipalityList";
 
 const page = () => {
   return (
@@ -13,6 +14,8 @@ const page = () => {
       </Head>
       <div style={{ marginTop: "90px" }}>
         <MapComponent />
+
+        <MunicipalityList />
       </div>
     </>
   );

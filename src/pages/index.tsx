@@ -27,6 +27,7 @@ import { useIsomorphicLayoutEffect } from "@/hook";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 
 import MapComponent from "../components/MapData/MapComponent";
+import MunicipalityList from "../components/MapData/MunicipalityList";
 
 import ImpactNumbers from "../components/ImpactsNumber";
 import { ActionButton } from "@/components/ActonButton";
@@ -198,6 +199,7 @@ export default function Home() {
 
       <section className={homeStyle.map_box}>
         <MapComponent />
+        <MunicipalityList />
       </section>
 
       {/* <section className={homeStyle.ft_video}>

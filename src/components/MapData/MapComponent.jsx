@@ -34,9 +34,9 @@ const MapComponent = () => {
     "pk.eyJ1IjoieW9nZXNoa2Fya2kiLCJhIjoiY2txZXphNHNlMGNybDJ1cXVmeXFiZzB1eSJ9.A7dJUR4ppKJDKWZypF_0lA";
 
   const [viewport, setViewport] = useState({
-    latitude: 27.7813667,
+    latitude: 28.2913667,
     longitude: 86.5316036,
-    minZoom: 6.3,
+    minZoom: 6.2,
     maxZoom: 10,
     dragPan: false,
     scrollZoom: false,
@@ -58,8 +58,8 @@ const MapComponent = () => {
 
     if (map) {
       map.flyTo({
-        center: [86.5316036, 27.7813667],
-        zoom: 6.3,
+        center: [86.5316036, 28.2913667],
+        zoom: 6.2,
       });
     }
 
@@ -256,7 +256,11 @@ const MapComponent = () => {
       </div>
 
       <Container maxWidth="xl">
-        <div className={componentStyle.map_data_box}>
+        <div
+          className={`${componentStyle.map_data_box} ${
+            dataBoxIndex ? `${componentStyle.active}` : ""
+          }`}
+        >
           {dataBoxIndex ? <SideBarData /> : <SideBarInitial />}
         </div>
       </Container>
