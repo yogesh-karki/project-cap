@@ -1,7 +1,17 @@
 .output {
-  margin: 60px 0;
+  padding: 60px 0;
+  background-color: azure;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 16px;
+
+  &:nth-child(even) {
+    background-color: #fff;
+  }
 
   &_title_main {
+    margin-bottom: 40px;
     h3 {
       margin-bottom: 15px;
     }
@@ -9,6 +19,36 @@
     h5 {
       width: 630px;
       max-width: 100%;
+    }
+  }
+
+  .activity_box {
+    margin: 60px 0 !important;
+
+    li {
+      margin-bottom: 20px;
+    }
+
+    .activity_box_grid {
+      align-items: center;
+
+      img {
+        width: 100%;
+      }
+
+      span {
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 10px;
+        display: block;
+        opacity: 0.8;
+      }
+    }
+
+    &:nth-child(odd) {
+      .activity_box_grid {
+        flex-direction: row-reverse;
+      }
     }
   }
 }

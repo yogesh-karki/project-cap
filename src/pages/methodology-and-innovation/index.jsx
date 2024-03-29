@@ -35,13 +35,14 @@ const strategy = () => {
         <meta property="og:image:height" content="442" />
       </Head>
       <InnerBanner
+        containerSize="lg"
         title="Methodology and Innovation "
         parent="About"
         image="/plastic-waste-pollution-ocean-plastic-bottle-floating-ocean-generative-ai.jpg"
       />
 
       <section className={componentStyle.textbox}>
-        <Container maxWidth="md">
+        <Container maxWidth="lg">
           <Grid container spacing={2} alignItems={"center"}>
             <Grid item md={6}>
               {data.map((data, index) => {

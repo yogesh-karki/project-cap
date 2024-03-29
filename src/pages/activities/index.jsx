@@ -18,15 +18,16 @@ const Activities = () => {
       </Head>
 
       <InnerBanner
+        containerSize="lg"
         title="Activities"
         parent="Activities"
         image="/quiet-issue-underwater-plastics-float-blue-sea.jpg"
       />
 
-      <Container maxWidth="lg">
-        {data.map((data, index) => {
-          return (
-            <div key={index} className={style.output}>
+      {data.map((data, index) => {
+        return (
+          <div key={index} className={style.output}>
+            <Container maxWidth="lg">
               <div className={style.output_title_main}>
                 <h3>{data.title}</h3>
                 <h5>{data.text}</h5>
@@ -34,25 +35,33 @@ const Activities = () => {
 
               {data.activities.map((val, index) => {
                 return (
-                  <Grid container key={index}>
-                    <Grid item md={6}>
-                      <img src="" alt="" />
-                    </Grid>
+                  <div key={index} className={style.activity_box}>
+                    <Grid
+                      container
+                      spacing={6}
+                      className={style.activity_box_grid}
+                    >
+                      <Grid item md={6}>
+                        <img src={val.activity_image} alt="" />
+                      </Grid>
 
-                    <Grid item md={6}>
-                      <span>{val.activity_head}</span>
-                      <h5>{val.activity_title}</h5>
-                      <div
-                        dangerouslySetInnerHTML={{ __html: val.activity_text }}
-                      />
+                      <Grid item md={6}>
+                        <span>{val.activity_head}</span>
+                        <h6>{val.activity_title}</h6>
+                        <div
+                          dangerouslySetInnerHTML={{
+                            __html: val.activity_text,
+                          }}
+                        />
+                      </Grid>
                     </Grid>
-                  </Grid>
+                  </div>
                 );
               })}
-            </div>
-          );
-        })}
-      </Container>
+            </Container>
+          </div>
+        );
+      })}
     </>
   );
 };

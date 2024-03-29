@@ -4,7 +4,7 @@ import { Container } from "@mui/material";
 import Link from "next/link";
 import { KeyboardArrowRight } from "@mui/icons-material";
 
-const InnerBanner = ({ title, parent, image }) => {
+const InnerBanner = ({ title, parent, image, containerSize }) => {
   return (
     <section
       className={componentStyle.banner_page}
@@ -12,7 +12,7 @@ const InnerBanner = ({ title, parent, image }) => {
         backgroundImage: `url(${image})`,
       }}
     >
-      <Container maxWidth="md">
+      <Container maxWidth={`${containerSize ? containerSize : "md"}`}>
         <div className={componentStyle.banner_page_text}>
           <ul>
             <li>

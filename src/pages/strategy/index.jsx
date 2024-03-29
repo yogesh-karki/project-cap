@@ -16,7 +16,7 @@ const strategy = () => {
       image: "",
     },
     {
-      title: "INTERCE",
+      title: "INTERCEPT",
       subtitle: "(RETRIEVE, RECYCLE)",
       text: "Strong plastic waste value chain is developed to intercept plastic waste leakages",
       image: "",
@@ -54,7 +54,11 @@ const strategy = () => {
             through – a reduction in plastic consumption and, intercepting for
             recycling.
           </p>
+        </Container>
+      </section>
 
+      <section className={componentStyle.air_box}>
+        <Container>
           <Grid
             container
             spacing={3}

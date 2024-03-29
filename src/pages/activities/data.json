@@ -4,11 +4,13 @@
     "text": "Integrated plastic collection model developed by engaging marginalized community members, IWWs and youth groups",
     "activities": [
       {
+        "activity_image": "/224.jpg",
         "activity_head": "Activity 1 ",
         "activity_title": "Establishing two material recovery facilities (MRFs) in Kathmandu valley and Golanjor municipality  ",
         "activity_text": "<li>Each MRF will have a baling unit and separate compartments for storing segregated plastic waste</li><li>The facility staff will be given organizational management training, gender responsive training, and occupational safety trainings </li>"
       },
       {
+        "activity_image": "/2175.jpg",
         "activity_head": "Activity 2 ",
         "activity_title": "Training vulnerable community members including fishermen, Dhobi and IWWs for plastic waste collection ",
         "activity_text": "<li>Marginalized communities will be trained to collect plastic waste for alternative livelihood </li>"
@@ -20,16 +22,19 @@
     "text": "Inclusive recycling network developed for value addition of plastic waste ",
     "activities": [
       {
+        "activity_image": "/guy-lake-makes-fire.jpg",
         "activity_head": "Activity 3",
         "activity_title": "Strengthening the capacity of one HDPE/LDPE recycling facility   ",
         "activity_text": "<li>An existing HDPE/LDPE facility in Gajuri rural municipality will be strengthened to increase its operational efficiency </li>"
       },
       {
+        "activity_image": "/img.jpg",
         "activity_head": "Activity 4",
         "activity_title": "Establishment of a PET recycling facility ",
         "activity_text": "<li>A recycling facility will be set up with a washline, an extruder and a strap extrusion that will process recovered plastics into pellets and recycled straps </li>"
       },
       {
+        "activity_image": "/ocean-plastic-free-1080x771.jpg",
         "activity_head": "Activity 5",
         "activity_title": "Stakeholders dialogue for recycled plastic standardization   ",
         "activity_text": "<li>A dialogue will be organized to incorporate the private sector including existing recyclers, plastic manufacturers, government counterparts including MoFE, DoEnv, DoI, NBSM, as well as academic institutions and experts  </li><li>International experts who have helped standardize recycling process will be included in the dialogue  </li><li>Based on the discussions, a set of recommendations will be prepared and handed over to the concerned governmental body   </li>"
@@ -41,16 +46,19 @@
     "text": "Engagement of Key stakeholders to foster enabling environment for plastic waste management through education, awareness dialogues, and advocacy  ",
     "activities": [
       {
+        "activity_image": "/plastic-pollution-beach.jpg",
         "activity_head": "Activity 6 ",
         "activity_title": "Strengthening existing CSOs of waste workers  ",
         "activity_text": "<li>Members of CSOs will be trained on organizational management  </li><li>Selected CSOs will be trained on policy advocacy and gender responsiveness </li>"
       },
       {
+        "activity_image": "/plastic-waste-pollution-ocean-plastic-bottle-floating-ocean-generative-ai.jpg",
         "activity_head": "Activity 7",
         "activity_title": "Establishment of 12 waste smart clubs in public schools  ",
         "activity_text": "<li>Twelve schools from project areas will be selected based on a selection matrix</li><li>Each WSCs will be extended a Children Impact Fund  </li><li>E-Library will be installed at each WSC  </li><li>Waste smart museums will be built at each WSC with an objective of inducing behavioural change in school children </li>"
       },
       {
+        "activity_image": "/plastic-waste-quietly-gathers-ocean-unnoticed-by-marine-life.jpg",
         "activity_head": "Activity 8",
         "activity_title": "Establishment of a youth cohort to engage youth groups ",
         "activity_text": "<li>One cohort of youth will be established from the project area</li><li>The cohort will be trained on conducting community level advocacy and awareness programs to institutionalize circular economy </li><li>Youth Cohort will lead 12 river cleanup campaigns </li>"
@@ -62,11 +70,13 @@
     "text": "Efficient knowledge gathering and dissemination to support national and regional replication ",
     "activities": [
       {
+        "activity_image": "/quiet-issue-underwater-plastics-float-blue-sea.jpg",
         "activity_head": "Activity 9",
         "activity_title": "Plastic Waste Mapping  ",
         "activity_text": "<li>Plastic waste mapping will be carried out through usage of visual surveying, government data, and technologies such as GIS </li>"
       },
       {
+        "activity_image": "/thumbnail.jpg",
         "activity_head": "Activity 10 ",
         "activity_title": "Web Portal Development ",
         "activity_text": "<li>A web portal will be developed to store and share all the related data findings</li><li>roject team will setup a mechanism to track near-real time data from project activities </li>"

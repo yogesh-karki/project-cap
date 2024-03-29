@@ -218,7 +218,7 @@
   .map_title {
     position: absolute;
     left: 5%;
-    bottom: 150px;
+    bottom: 50px;
     width: 370px;
 
     h5 {
@@ -406,15 +406,33 @@
   }
 }
 
+.air_box {
+  background: #003e62;
+  padding: 40px 0;
+}
+
 .air_grid {
   text-align: center;
-  margin-top: 50px;
 
   .card_wrap {
-    padding: 20px;
+    padding: 60px 20px;
+    background-color: #ffffff0d;
+    color: #fff;
+    box-shadow: none;
 
     h4 {
       margin-bottom: 15px;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    h6 {
+      color: #fff;
+      opacity: 0.6;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 2px;
+      margin: 15px 0;
     }
   }
 }
