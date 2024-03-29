@@ -7,7 +7,37 @@ import style from "./style.module.scss";
 
 import data from "./data.json";
 
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+import { useIsomorphicLayoutEffect } from "@/hook";
+
 const Activities = () => {
+  // useIsomorphicLayoutEffect(() => {
+  //   gsap.registerPlugin(ScrollTrigger);
+
+  //   let imageContainer = document.querySelectorAll(".image_container");
+
+  //   imageContainer.forEach((parentEL) => {
+  //     let img = parentEL.querySelector("img");
+
+  //     const gsapCtx = gsap.context(() => {
+  //       gsap.from(img, {
+  //         opacity: 0,
+  //         y: -20,
+  //         scrollTrigger: {
+  //           trigger: parentEL,
+  //           start: "top 80%",
+  //           markers: true,
+  //         },
+  //       });
+
+  //       ScrollTrigger.refresh();
+  //     });
+
+  //     return () => gsapCtx.revert();
+  //   });
+  // });
   return (
     <>
       <Head>
@@ -42,7 +72,9 @@ const Activities = () => {
                       className={style.activity_box_grid}
                     >
                       <Grid item md={6}>
-                        <img src={val.activity_image} alt="" />
+                        <div className="image_container">
+                          <img src={val.activity_image} alt="" />
+                        </div>
                       </Grid>
 
                       <Grid item md={6}>

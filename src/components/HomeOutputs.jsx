@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useRef } from "react";
 import { Container, Grid } from "@mui/material";
 import homeStyle from "../styles/home.module.scss";
